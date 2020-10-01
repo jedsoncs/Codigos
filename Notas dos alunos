@@ -1,0 +1,38 @@
+programa {
+	funcao inicio() {
+		
+		inteiro alunos , matricula , melhorNota = -1, melhorMatricula = -1
+		real nota
+		
+		escreva ("Digite a quantidade de alunos: ")
+		leia (alunos)
+		limpa()
+		
+		para (inteiro i=1; alunos>0; i++){
+		    escreva ("\n","Digite a matrícula do aluno: ")
+		    leia (matricula)
+		    escreva ("Digite a nota do aluno: ")
+		    leia (nota)
+		    
+		    se (nota>=0 e nota<=100){
+		    se (nota> melhorNota){
+		        melhorNota = nota
+		        melhorMatricula = matricula
+		    }
+		    
+		    se (nota>=60){
+		        escreva ("O aluno de matricula ", matricula, " está aprovado.")
+		    } senao {
+		        escreva ("O aluno de matricula ", matricula, " está reprovado.")
+		    }
+		    } senao {
+		        escreva ("Digite uma nota válida ;)")
+		    }
+		}
+		 se (alunos>0) {
+		     escreva ("\n", "O aluno com a melhor nota foi o de matricula ", melhorMatricula, " e sua nota foi ", melhorNota)
+		 } senao {
+		     escreva ("A quantidade de alunos não pode ser menor que 1, T_T.")
+		 }
+	}
+}
