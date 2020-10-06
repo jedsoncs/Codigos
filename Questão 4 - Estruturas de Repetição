@@ -1,0 +1,27 @@
+programa {
+	funcao inicio() {
+		inteiro alunos , notaAux1=0 , quantAlunos = 1
+		real nota , media
+		
+		escreva ("Digite a quantidade de alunos: ")
+		leia (alunos)
+		limpa ()
+		
+		para(inteiro i=1; i<=alunos ; i++) {
+		    se (i==1) {
+		        escreva ("Digite as notas dos alunos, começando pelo primeiro: ")
+		        leia (nota)
+		        limpa()
+		  } senao {
+		      escreva ("Digite a nota do aluno " , i ,": ")
+		      leia (nota)
+		      limpa ()
+		  }
+		  quantAlunos = i
+		  notaAux1 = notaAux1 + nota
+	}
+	
+	media = notaAux1/quantAlunos
+	escreva ("A média das notas dos alunos é exatamente: " , media)
+}
+}
