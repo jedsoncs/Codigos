@@ -1,0 +1,36 @@
+programa {
+	funcao inicio() {
+	    inteiro numero=0 , numAux1=0 , numAux2=0
+	    
+	    
+		para(inteiro i=1; i<=10 e numero != -1 ; i++){
+		    
+		    escreva ("Digite o ", i , "° número: ")
+		    leia (numero)
+		    limpa ()
+		    
+		    se (i==1) {
+		        numAux1 = numero
+		        numAux2 = numero
+		    }
+		    
+		    se (numero > numAux1 e numero != -1) {
+		        numAux1 = numero
+		    }  
+		    
+		    se (numero < numAux2 e numero != -1) {
+		       numAux2 = numero 
+		    }
+		    
+		}
+		
+		se (numero == -1){
+		    escreva("O número -1 não é válido =/" , "\n")
+		    escreva("O maior e o menor número digitados até então, são respectivamente " , numAux1 , " e " , numAux2 , ".")
+		} senao {
+		    escreva ("O maior e o menor número digitados acima, são respectivamente " , numAux1 , " e " , numAux2 , ".")
+		}
+		
+		
+	}
+}
