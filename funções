@@ -1,0 +1,42 @@
+programa {
+	funcao inicio() {
+		inteiro soma, subtracao, multiplicacao, divisao , c, d
+		
+		escreva ("Digite um valor para ser usado nos cálculos: ")
+		leia (c)
+		limpa ()
+		
+		escreva ("Digite outro valor para ser utilizado com o anterior anterior: ")
+		leia (d)
+		limpa ()
+		
+		soma = result1 (c,d)
+		escreva ("O resultado da soma dos dois números é: ", soma)
+		
+		subtracao = result2 (c,d)
+		escreva ("\nO resultado da subtração dos dois números é: ", subtracao)
+		
+		multiplicacao = result3 (c,d)
+		escreva ("\nO resultado da multiplicação dos dois números é: ", multiplicacao)
+		
+		divisao = result4 (c,d)
+		escreva ("\nO resultado da divisão dos dois números é: ", divisao)
+	}
+	
+	funcao inteiro result1 (inteiro a, inteiro b) {
+	      
+	    retorne  a + b
+	}
+	funcao inteiro result2 (inteiro a, inteiro b) {
+	    
+	    retorne a - b
+	}
+	funcao inteiro result3 (inteiro a, inteiro b) {
+	    
+	    retorne a * b
+	}
+	funcao real result4 (real a, real b) {
+	    
+	    retorne a / b
+	}
+}
